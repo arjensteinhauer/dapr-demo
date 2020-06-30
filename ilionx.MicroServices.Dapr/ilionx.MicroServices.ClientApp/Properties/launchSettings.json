@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "ilionx.MicroServices.ClientApp": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapr.Client" Version="0.8.0-preview01" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ilionx.MicroServices.Models\ilionx.MicroServices.Models.csproj" />
+    <ProjectReference Include="..\ShapeActor.Interfaces\ilionx.MicroServices.Actors.Interface.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,60 @@
+/*
+    This is a configuration file for the SwitchStartupProject Visual Studio Extension
+    See https://bitbucket.org/thirteen/switchstartupproject/src/tip/Configuration.md
+*/
+{
+  /*  Configuration File Version  */
+  "Version": 3,
+
+  /*  Create an item in the dropdown list for each project in the solution?  */
+  "ListAllProjects": false,
+
+  /*  Dictionary of named configurations with one or multiple startup projects
+      and optional parameters like command line arguments and working directory. */
+  "MultiProjectConfigurations": {
+    "Client": {
+      "Projects": {
+        "ilionx.MicroServices.ClientApp\\ilionx.MicroServices.ClientApp.csproj": {
+          "ProfileName": "ilionx.MicroServices.ClientApp"
+        }
+      }
+    },
+    "Actor host": {
+      "Projects": {
+        "ilionx.MicroServices.Actors.Host\\ilionx.MicroServices.Actors.Host.csproj": {
+          "ProfileName": "ilionx.MicroServices.Actors.Host"
+        }
+      }
+    },
+    "Stateful service": {
+      "Projects": {
+        "ilionx.MicroServices.Stateful\\ilionx.MicroServices.Stateful.csproj": {
+          "ProfileName": "ilionx.MicroServices.Stateful"
+        }
+      }
+    },
+    "Actor host + stateful service": {
+      "Projects": {
+        "ilionx.MicroServices.Actors.Host\\ilionx.MicroServices.Actors.Host.csproj": {
+          "ProfileName": "ilionx.MicroServices.Actors.Host"
+        },
+        "ilionx.MicroServices.Stateful\\ilionx.MicroServices.Stateful.csproj": {
+          "ProfileName": "ilionx.MicroServices.Stateful"
+        }
+      }
+    },
+    "Actor host + stateful service + client": {
+      "Projects": {
+        "ilionx.MicroServices.Actors.Host\\ilionx.MicroServices.Actors.Host.csproj": {
+          "ProfileName": "ilionx.MicroServices.Actors.Host"
+        },
+        "ilionx.MicroServices.Stateful\\ilionx.MicroServices.Stateful.csproj": {
+          "ProfileName": "ilionx.MicroServices.Stateful"
+        },
+        "ilionx.MicroServices.ClientApp\\ilionx.MicroServices.ClientApp.csproj": {
+          "ProfileName": "ilionx.MicroServices.ClientApp"
+        }
+      }
+    }
+  }
+}
